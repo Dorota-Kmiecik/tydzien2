@@ -14,25 +14,21 @@ namespace Tydzien2
             string firstName;
             string lastName;
             char sex;
-            uint pesel;
-            ulong employerNumber;
+            string pesel;
+            string employerNumber;
 
             //Zadanie 2
             char x = 'A';
             char y = 'B';
             char z = 'C';
-
             Console.WriteLine($"{z}, {y}, {x}");
 
             //Zadanie 3
             int lenght = 4;
             int width = 7; 
-
             int lenghtPow = (int)Math.Pow( lenght, 2 );
             int widthPow = (int)Math.Pow( width, 2 );
-
             double diagonal = Math.Sqrt( lenghtPow + widthPow);
-
             Console.WriteLine(diagonal);
 
             // Zadanie 4
@@ -41,18 +37,16 @@ namespace Tydzien2
             string name = "Szkola Dotneta";
 
             // Zadanie 5
-
             Console.WriteLine("Podaj swoje imie");
             string firstName1 = Console.ReadLine();
-
             Console.WriteLine("Podaj swoje nazwisko");
             string lastName1 = Console.ReadLine();
-
             Console.WriteLine("Podaj swoja wage");
-            double weight = double.Parse( Console.ReadLine() );
-
+            double weight;
+            if (!double.TryParse(Console.ReadLine(), out weight))
+                int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj swoj numer telefonu");
-            uint phoneNumber = uint.Parse( Console.ReadLine() );
+            string phoneNumber = Console.ReadLine();
 
 
 
