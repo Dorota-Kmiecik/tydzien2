@@ -47,14 +47,6 @@ namespace Tydzien2
                 int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj swoj numer telefonu");
             string phoneNumber = Console.ReadLine();
-
-
-
-
-
-
-
-
         }
     }
 }
