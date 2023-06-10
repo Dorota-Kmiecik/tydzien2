@@ -43,8 +43,12 @@ namespace Tydzien2
             string lastName1 = Console.ReadLine();
             Console.WriteLine("Podaj swoja wage");
             double weight;
+            int weight2;
             if (!double.TryParse(Console.ReadLine(), out weight))
-                int.Parse(Console.ReadLine());
+            {
+                if(!int.TryParse(Console.ReadLine(), out weight2))
+                    Console.WriteLine("Podales nieprawidlowe dane");
+            }
             Console.WriteLine("Podaj swoj numer telefonu");
             string phoneNumber = Console.ReadLine();
         }
